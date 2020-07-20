@@ -63,7 +63,8 @@ body {
 }
 
 .footer-container {
-    background-color: #0A4A70;
+    background: #126292;  
+    background: linear-gradient(to right, #0A4A70, #4B8BB1);
     font-size: 1rem;
     color: #FFE18D;
     justify-content: space-evenly;
@@ -77,12 +78,10 @@ body {
     width: 100%
 }
 
-.content {
-    padding: 15px;
-}
+
 
 .sticky + .content {
-    padding-top: 100px;
+    padding-top: 39px;
 }
 
 /* Effects */
