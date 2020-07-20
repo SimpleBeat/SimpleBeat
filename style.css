@@ -78,8 +78,6 @@ body {
     width: 100%
 }
 
-
-
 .sticky + .content {
     padding-top: 39px;
 }
@@ -225,5 +223,8 @@ body {
     }
     .sampletext {
         font-size: 1.2rem;
+    }
+    .paper {
+        width: 95%;
     }
 }
