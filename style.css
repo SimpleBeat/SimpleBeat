@@ -189,7 +189,7 @@ a {
     position: absolute;
     top: -20px;
     left: 0;
-    width: 90%;
+    width: 89%;
     height: 100%;
     overflow: hidden;
     z-index: 10;
@@ -299,22 +299,22 @@ a {
     }
     .menu-item {
         font-size: 1rem;
-        margin: 5px 12px;
-    }
-    .sampletext {
-        font-size: 1.2rem;
+        margin: 5px 10px;
     }
     .paper {
         width: 93%;
     }
     .article-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .article-image {
         height: 200px;
+        margin: 10px;
     }
     .article-body {
         font-size: 1rem;
+        margin: 0px 5px;
+        padding: 1px 5px;
     }
     .to-left {
         margin-left: -7%;
