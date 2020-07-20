@@ -122,9 +122,9 @@ body {
     width: 50%;
     height: 3px;
     margin: 10px auto;
-    background-color: #B08306;
+    background-color: #F8C63E;
     border-radius: 3px;
-    box-shadow: 0 2px 5px 0px rgba(10, 74, 112, 0.5);
+    box-shadow: 0 1px 1px 1px rgba(10, 74, 112, 0.5);
 }
 
 .header {
@@ -312,7 +312,7 @@ a {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
     #simplebeat {
         font-size: 2.3rem;
         letter-spacing: 0.6rem;
@@ -329,7 +329,7 @@ a {
     }
     .article-image {
         height: 200px;
-        margin: 10px;
+        margin: 7px;
     }
     .article-body {
         font-size: 1rem;
@@ -337,9 +337,9 @@ a {
         padding: 1px 5px;
     }
     .to-left {
-        margin-left: -7%;
+        margin-left: -9%;
     }
     .to-right {
-        margin-right: -7%;
+        margin-right: -9%;
     }
 }
