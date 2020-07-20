@@ -1,5 +1,5 @@
-Hi, I am Ilya, Web & iOS Developer!
-*And this is my portfolio card*
+Hi, I am Ilya, Web & iOS Developer!  
+*(this is my portfolio card)*
 
 Please, feel free to browse and check out the projects I've done over the course of my dev journey. Here are a few you might be interested in:
 
