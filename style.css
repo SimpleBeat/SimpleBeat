@@ -37,7 +37,7 @@ body {
 }
 
 .menu-item {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 5px 15px;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 .sampletext {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 5px;
     padding: 5px;
 }
@@ -213,5 +213,17 @@ body {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #simplebeat {
+        font-size: 3rem;
+    }
+    .menu-item {
+        font-size: 1rem;
+    }
+    .sampletext {
+        font-size: 1.2rem;
     }
 }
