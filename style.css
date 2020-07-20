@@ -5,16 +5,25 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #e9e9e9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
-#hello {
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 4rem;
-    font-weight: bold;
-    color: #126292;
-    margin-top: 100px;
+.image-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('img/ilya.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 400px;
 }
 
 .fade-in {
