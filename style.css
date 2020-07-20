@@ -111,10 +111,20 @@ body {
 
 .article-body {
     font-size: 1.2rem;
+    color: #0A4A70;
     margin: 0px 15px;
     padding: 1px 15px;
     z-index: 41;
     transition: font-size 0.8s ease-out;
+}
+
+.divider {
+    width: 50%;
+    height: 3px;
+    margin: 10px auto;
+    background-color: #B08306;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0px rgba(10, 74, 112, 0.5);
 }
 
 .header {
@@ -148,12 +158,13 @@ a {
 .footer-links {
     list-style-type: none;
     font-size: 1rem;
-    text-align: center;
-    margin-top: 30px;
+    text-align: left;
+    margin: 30px 10%;
 }
 
 .footer-link {
-    margin: 10px 10px;
+    margin: 10px auto;
+    align-self: center;
 }
 
 .footer-link:hover {
@@ -303,7 +314,7 @@ a {
 
 @media screen and (max-width: 850px) {
     #simplebeat {
-        font-size: 3rem;
+        font-size: 2.3rem;
         letter-spacing: 0.6rem;
     }
     .menu-item {
