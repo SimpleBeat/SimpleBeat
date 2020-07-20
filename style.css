@@ -24,7 +24,7 @@ body {
 }
 
 #simplebeat {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     font-weight: bold;
     color: #FFE18D;
     align-self: center;
@@ -97,11 +97,11 @@ body {
     display: block;
     max-width: 100%;
     max-height: 100%;
-    border-image: inherit;
+    border-radius: inherit;
 }
 
 .article-body {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0px 15px;
     padding: 1px 15px;
     z-index: 41;
