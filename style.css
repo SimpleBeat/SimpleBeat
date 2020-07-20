@@ -204,7 +204,6 @@ a {
     background: rgba(255, 255, 255, 0.2);
     animation: animate 12s linear infinite;
     bottom: -150px;
-    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
 }
 
 .circles li:nth-child(1){
@@ -235,7 +234,7 @@ a {
     width: 60px;
     height: 60px;
     animation-delay: 0s;
-    animation-duration: 8s;
+    animation-duration: 18s;
 }
 
 .circles li:nth-child(5){
@@ -286,12 +285,10 @@ a {
 @keyframes animate {
     0%{
         transform: translateY(0) rotate(0deg);
-        opacity: 0.2;
         border-radius: 10%;
     }
     100%{
         transform: translateY(-1000px) rotate(720deg);
-        opacity: 1;
         border-radius: 50%;
     }
 }
