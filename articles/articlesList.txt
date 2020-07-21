@@ -1,0 +1,19 @@
+What is linting, and why is it important
+December 2019
+Looking into one of the most time and nerves saving technologies.
+linting-important
+
+Getting Things Done in coding
+January 2020
+How GTD methodology may be implemented in coding environment.
+gtd-in-coding
+
+React or not React?
+January 2020
+Using any type of a framework has its pros and cons, let's take a look.
+react-not-react
+
+SimpleBeat website redesign
+March 2020
+Thoughts on website redesign in general terms.
+simplebeat-redesign
