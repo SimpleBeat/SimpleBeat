@@ -73,14 +73,73 @@ function constructPage(elements) {
     paper.append(article)
 }
 
+function showFull(pageName) {
+    console.log("showing full description!")
+}
+
+function constructCard(elements) {
+    const cardContainer = document.createElement("div")
+    const cardTitle = document.createElement("div")
+    const cardDate = document.createElement("div")
+    const cardText = document.createElement("div")
+    const cardFullLink = document.createElement("div")
+    cardContainer.classList.add("card-container")
+    cardTitle.classList.add("card-title")
+    cardDate.classList.add("card-date")
+    cardText.classList.add("card-text")
+    cardFullLink.classList.add("card-full-link")
+
+    if (elements.length > 4) {
+        cardTitle.innerHTML = "<a href='"+elements[5]+"'>"+elements[0]+"</a>"
+    } else {
+        cardTitle.innerText = elements[0]
+    }
+
+    cardDate.innerText = elements[1]
+    cardText.innerHTML = elements[2]
+
+    cardFullLink.innerText = "Learn More"
+    cardFullLink.addEventListener('click', function() { showFull(elements[3]) })
+    
+    cardContainer.append(cardTitle)
+    cardContainer.append(cardDate)
+    if (elements.length > 4) {
+        const cardTech = document.createElement("div")
+        cardTech.classList.add("card-tech")
+        cardTech.innerText = elements[4]
+        cardContainer.append(cardTech)
+    }
+    cardContainer.append(cardText)
+    cardContainer.append(cardFullLink)
+    
+    return cardContainer
+}
+
 // constructs and renders grid-based page using an array of elements
 function constructGrid(x) {
-    let numberOfCardElements = 4
+    let numberOfCardElements = 0 // number of elements on each card
+    let list = [] // list with all elements for all the cards
+    let numberOfCards = 0 // how many cards to display
+
     if (x === "P") {
-        numberOfCardElements = 6
-        console.log(projectsList)
+        list = projectsList
+        numberOfCardElements = 7
+        numberOfCards = list.length / numberOfCardElements
     } else {
-        console.log(articlesList)
+        list = articlesList
+        numberOfCardElements = 5
+        numberOfCards = list.length / numberOfCardElements
+    }
+
+    for (let i=0; i<numberOfCards; i++) {
+        let cardIndex = i*numberOfCardElements
+        let cardData = []
+        for (let j=cardIndex; j<cardIndex+numberOfCardElements; j++) {
+            cardData.push(list[j])
+        }
+        const card = constructCard(cardData)
+
+        paper.append(card)
     }
 }
 
