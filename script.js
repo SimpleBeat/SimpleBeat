@@ -77,7 +77,7 @@ function showFull(pageName) {
     console.log("showing full description!")
 }
 
-function constructCard(elements) {
+function constructCard(els) {
     const cardContainer = document.createElement("div")
     const cardTitle = document.createElement("div")
     const cardDate = document.createElement("div")
@@ -89,22 +89,28 @@ function constructCard(elements) {
     cardText.classList.add("card-text")
     cardFullLink.classList.add("card-full-link")
 
-    if (elements.length > 5) {
-        cardTitle.innerHTML = "<a href='"+elements[5]+"'>"+elements[0]+"</a>"
+    if (els.length > 5) {
+        cardTitle.innerHTML = "<a href='"+els[5]+"'>"+els[0]+"</a>"
     } else {
-        cardTitle.innerText = elements[0]
+        cardTitle.innerText = els[0]
     }
 
-    if (elements.length > 5) {
-        cardDate.innerText = elements[4]
+    if (els.length > 5) {
+        cardDate.innerText = els[4]
     } else {
-        cardDate.innerText = elements[1]
+        cardDate.innerText = els[1]
     }
     
-    cardText.innerHTML = elements[2]
+    cardText.innerHTML = els[2]
 
-    cardFullLink.innerText = "Learn More"
-    cardFullLink.addEventListener('click', function() { showFull(elements[3]) })
+    if (els.length > 5) {
+        cardFullLink.innerText = "Learn More"
+    } else {
+        cardFullLink.innerText = "Read on"
+    }
+
+
+    cardFullLink.addEventListener('click', function() { showFull(els[3]) })
     
     cardContainer.append(cardTitle)
     cardContainer.append(cardDate)
