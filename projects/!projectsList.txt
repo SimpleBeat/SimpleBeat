@@ -1,4 +1,4 @@
-Format: Project title, URL, Year(s) supported, Technologies used, Brief description, link to Project Card
+Format: project title, URL, year(s) supported, technologies used, brief description, link to full project description
 
 SimpleBeat Portfolio
 https://simplebeat.github.io/SimpleBeat

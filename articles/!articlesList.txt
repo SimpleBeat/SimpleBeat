@@ -1,8 +1,8 @@
-Format: Title, Date, Slug line, link to the full article
+Format: title, date, slug line, link to full article
 
 What is linting, and why is it important
 December 2019
-Looking into one of the most time and nerves saving technologies.
+Looking into one of the most time and nerve saving technologies.
 linting-important
 
 Getting Things Done in coding

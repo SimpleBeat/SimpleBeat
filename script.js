@@ -1,6 +1,5 @@
 const header = document.getElementById("myHeader")
 const sticky = header.offsetTop
-
 const paper = document.getElementById("myPaper")
 let currentPage = "W"
 
@@ -35,13 +34,8 @@ function checkOffset() {
 // Main functions
 // --------------
 
-// loads a list of all articles from a text file
-function loadArticlesList() {
-
-}
-
-// loads a list of all projects from a text file
-function loadProjectsList() {
+// loads articles and projects list from text files
+function loadLists() {
 
 }
 
@@ -90,7 +84,7 @@ function showPage(x) {
 
         case "P":
             currentPage = x
-            
+
             break;
         default:
             break;
@@ -99,8 +93,5 @@ function showPage(x) {
 
 // On page load 
 window.onscroll = function() { checkOffset() };
-
-loadArticlesList()
-loadProjectsList()
-
+loadLists()
 constructPage(welcomePage)
