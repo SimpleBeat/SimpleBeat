@@ -41,3 +41,4 @@ function createHelloDiv() {
 // On page load 
 window.onscroll = function() { checkOffset() };
 createHelloDiv()
+createHelloDiv()
