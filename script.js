@@ -89,13 +89,18 @@ function constructCard(elements) {
     cardText.classList.add("card-text")
     cardFullLink.classList.add("card-full-link")
 
-    if (elements.length > 4) {
+    if (elements.length > 5) {
         cardTitle.innerHTML = "<a href='"+elements[5]+"'>"+elements[0]+"</a>"
     } else {
         cardTitle.innerText = elements[0]
     }
 
-    cardDate.innerText = elements[1]
+    if (elements.length > 5) {
+        cardDate.innerText = elements[4]
+    } else {
+        cardDate.innerText = elements[1]
+    }
+    
     cardText.innerHTML = elements[2]
 
     cardFullLink.innerText = "Learn More"
@@ -103,14 +108,10 @@ function constructCard(elements) {
     
     cardContainer.append(cardTitle)
     cardContainer.append(cardDate)
-    if (elements.length > 4) {
-        const cardTech = document.createElement("div")
-        cardTech.classList.add("card-tech")
-        cardTech.innerText = elements[4]
-        cardContainer.append(cardTech)
-    }
     cardContainer.append(cardText)
     cardContainer.append(cardFullLink)
+
+    cardContainer.classList.add("fade-in")
     
     return cardContainer
 }
@@ -131,6 +132,9 @@ function constructGrid(x) {
         numberOfCards = list.length / numberOfCardElements
     }
 
+    const gridContainer = document.createElement("div")
+    gridContainer.classList.add("grid-container")
+
     for (let i=0; i<numberOfCards; i++) {
         let cardIndex = i*numberOfCardElements
         let cardData = []
@@ -139,8 +143,10 @@ function constructGrid(x) {
         }
         const card = constructCard(cardData)
 
-        paper.append(card)
+        gridContainer.append(card)
     }
+
+    paper.append(gridContainer)
 }
 
 // displays Welcome, Articles, or Projects pages ("W", "A", "P")
