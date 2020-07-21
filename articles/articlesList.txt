@@ -1,3 +1,5 @@
+Format: Title, Date, Slug line, link to the full article
+
 What is linting, and why is it important
 December 2019
 Looking into one of the most time and nerves saving technologies.
