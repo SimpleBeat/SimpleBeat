@@ -4,23 +4,21 @@ const sticky = header.offsetTop
 const paper = document.getElementById("myPaper")
 let currentPage = "W"
 
-const articlesList = []; // list of all articles from articles.txt
-const projectsList = []; // list of all projects from projects.txt
-
 const welcomeLink = document.getElementById("welcome")
 const projectsLink = document.getElementById("projects")
 const articlesLink = document.getElementById("articles")
-
-const welcomePage = [
-    "Welcome to SimpleBeat!",
-    "<div class='article-image to-left'><img src='img/ilya.jpg' alt='ilya avatar'></div>",
-    "<p>I am a web developer with experience in design and mobile software engineering.</p>",
-    "<p>I've been building, deploying, and maintaining websites for over <b>20 years.</b></p>"
-]
-
 welcomeLink.addEventListener("click", function() { showPage("W") })
 projectsLink.addEventListener("click", function() { showPage("P") })
 articlesLink.addEventListener("click", function() { showPage("A") })
+
+const articlesList = []; // list of all articles from articlesList.txt
+const projectsList = []; // list of all projects from projectsList.txt
+const welcomePage = [
+    "Welcome to SimpleBeat!",
+    "<div class='article-image to-left'><img src='ilya-avatar.jpg' alt='ilya avatar'></div>",
+    "<p>I am a web developer with experience in design and mobile software engineering.</p>",
+    "<p>I've been building, deploying, and maintaining websites for over <b>20 years.</b></p>"
+]
 
 // Helper functions
 // ----------------
@@ -79,9 +77,7 @@ function showPage(x) {
     if (currentPage === x) {
         return
     }
-
     paper.innerHTML = ""
-    
     switch (x) {
         case "W":
             currentPage = x
@@ -89,39 +85,16 @@ function showPage(x) {
             break;
         case "A":
             currentPage = x
+            
             break;
 
         case "P":
             currentPage = x
+            
             break;
         default:
             break;
     }
-}
-
-function createHelloDiv() {
-    const article = document.createElement("div")
-    const title = document.createElement("div")
-    const text = document.createElement("div")
-    const divider = document.createElement("div")
-    const image = document.createElement("div")
-    const pic = document.createElement("img")
-    article.append(title)
-    article.append(image)
-    article.append(text)
-    article.append(divider)
-    paper.append(article)
-    article.classList.add("article")
-    title.classList.add("article-title")
-    text.classList.add("article-body")
-    divider.classList.add("divider")
-    image.classList.add("article-image")
-    image.classList.add("to-left")
-    pic.src = "img/ilya.jpg"
-    image.append(pic)
-    text.innerHTML = "Hello! My name is Ilya, I am a web developer with a <b>vast</b> experience in designing, building, deploying, and maintaining websites for 15+ years."
-    title.innerText = "Welcome to SimpleBeat!"
-    
 }
 
 // On page load 
