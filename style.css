@@ -31,9 +31,9 @@ body {
     color: #FFE18D;
     align-self: center;
     text-shadow: 0 0 10px #E5AC10;
-    transition: letter-spacing 3s ease-out;
-    transition: font-size 0.8s ease-out;
-    letter-spacing: 1.2rem;
+    transition: letter-spacing 4s ease-out;
+    transition: font-size 2s ease-out;
+    letter-spacing: 1.3rem;
 }
 
 .menu {
@@ -64,13 +64,14 @@ body {
     z-index: 40;
     width: 85%;
     box-shadow: 0 5px 100px 2px rgba(10, 74, 112, 0.2);
-    transition: width 0.8s ease-out;
+    transition: all 0.8s ease-out;
 }
 
 .article {
     margin: 30px 0;
     padding: 10px 30px;
     display: block;
+    animation: fadeIn 1s ease-out;
 }
 
 .article-title {
@@ -123,6 +124,11 @@ body {
     padding: 1px 15px;
     z-index: 41;
     transition: font-size 0.8s ease-out;
+}
+
+.article-body p {
+    margin-top: 1px;
+    padding: 0;
 }
 
 .divider {
@@ -203,9 +209,11 @@ a {
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
+        transform: translateY(0px);
     }
 }
 

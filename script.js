@@ -14,13 +14,13 @@ const articlesLink = document.getElementById("articles")
 const welcomePage = [
     "Welcome to SimpleBeat!",
     "<div class='article-image to-left'><img src='img/ilya.jpg' alt='ilya avatar'></div>",
-    "I am a web developer with experience in design and mobile software engineering.",
-    "I've been building, deploying, and maintaining websites for over <b>20 years</b>."
+    "<p>I am a web developer with experience in design and mobile software engineering.</p>",
+    "<p>I've been building, deploying, and maintaining websites for over <b>20 years.</b></p>"
 ]
 
-welcomeLink.addEventListener("click", showPage("W"))
-projectsLink.addEventListener("click", showPage("P"))
-articlesLink.addEventListener("click", showPage("A"))
+welcomeLink.addEventListener("click", function() { showPage("W") })
+projectsLink.addEventListener("click", function() { showPage("P") })
+articlesLink.addEventListener("click", function() { showPage("A") })
 
 // Helper functions
 // ----------------
@@ -52,23 +52,24 @@ function constructPage(elements) {
     const article = document.createElement("div")
     const title = document.createElement("div")
     const text = document.createElement("div")
-    const divider = document.createElement("div")
+    const divider = document.createElement("p")
+    const dividerP = document.createElement("div")
 
     article.classList.add("article")
     title.classList.add("article-title")
     text.classList.add("article-body")
-    divider.classList.add("divider")
+    dividerP.classList.add("divider")
 
-    title.innerText = welcomePage[0]
+    title.innerText = elements[0]
     let allText = ""
-    for (let i=1; i<welcomePage.length; i++) {
-        allText += "<p>"+welcomePage[i]+"</p>"
+    for (let i=1; i<elements.length; i++) {
+        allText += elements[i]
     }
     text.innerHTML = allText
-    
 
     article.append(title)
     article.append(text)
+    divider.append(dividerP)
     article.append(divider)
     paper.append(article)
 }
@@ -78,6 +79,9 @@ function showPage(x) {
     if (currentPage === x) {
         return
     }
+
+    paper.innerHTML = ""
+    
     switch (x) {
         case "W":
             currentPage = x
