@@ -194,11 +194,12 @@ body {
     }
 
     .navbar {
-        margin-left: 10%;
+        margin-left: 5%;
+        text-align: center;
     }
     .tech {
         margin-right: 1%;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -249,21 +250,26 @@ body {
     }
     .title {
         margin: 10px auto;
-        font-size: 2rem;
+        font-size: 1.5rem;
         align-self: flex-end;
     }
 
+    .navbar-container {
+        height: 50px;
+    }
     .navbar {
-        margin-left: 0.5%;
+        margin-left: 0px;
+        text-align: center;
     }
     .tech {
-        margin-right: 0.5%;
-        margin-top: 2px;
-        font-size: 0.5rem;
+        margin: 3px;
+        padding: 2px 5px;
+        font-size: 0.7rem;
     }
 
     .main-body-container {
         justify-content: center;
+
     }
     .main-body {
         width: 95%;
