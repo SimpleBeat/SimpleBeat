@@ -32,6 +32,7 @@ body {
     margin: 20px 20px -200px 15px;
     padding: 0;
     position: sticky;
+    position: -webkit-sticky;
     top: 55px;
     z-index: 10;
     display: flex;
