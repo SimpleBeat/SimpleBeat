@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: ease all .5s;
 }
 .avatar {
     margin: 0;
@@ -49,6 +50,7 @@ body {
     background-color: var(--blue-l);
     border-radius: 50%;
     box-shadow: 0px 0px 150px 0px var(--blue-ll);
+    transition: ease all .5s;
 }
 .avatar img {
     margin: 0;
@@ -57,6 +59,7 @@ body {
     margin-top: -22px;
     clip-path: circle(75px at center);
     border-radius: 50%;
+    transition: ease all .5s;
 }
 .subtitle {
     margin-top: 5px;
@@ -65,6 +68,7 @@ body {
     font-weight: bold;
     color: var(--blue-d);
     text-align: center;
+    transition: ease all .5s;
 }
 
 .title-container {
@@ -75,6 +79,7 @@ body {
     width: 100%;
     height: 300px;
     background: linear-gradient(to left, var(--blue-dd), var(--blue-l));
+    transition: ease all .5s;
 }
 .title {
     margin-left: 20%;
@@ -83,6 +88,7 @@ body {
     font-weight: bold;
     color: var(--yellow);
     align-self: center;
+    transition: ease all .5s;
 }
 
 .navbar-container {
@@ -98,11 +104,13 @@ body {
     flex-direction: row;
     box-shadow: 0px 2px 2px 0px var(--blue-shadow);
     z-index: 5;
+    transition: ease all .5s;
 }
 .navbar {
     width: 100%;
     margin-left: 20%;
     align-self: center;
+    transition: ease all .5s;
 }
 .tech {
     margin-right: 3%;
@@ -112,6 +120,7 @@ body {
     border-radius: 3px;
     font-size: 1rem;
     font-weight: bold;
+    transition: ease all .5s;
 }
 
 .main-body-container {
