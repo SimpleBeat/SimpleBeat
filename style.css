@@ -49,7 +49,7 @@ body {
     text-align: center;
     background-color: var(--blue-l);
     border-radius: 50%;
-    box-shadow: 0px 0px 150px 0px var(--blue-ll);
+    box-shadow: 0px 0px 50px 0px var(--blue-ll);
     transition: ease all .5s;
 }
 .avatar img {
@@ -57,8 +57,10 @@ body {
     padding: 0;
     width: 150px;
     margin-top: -22px;
+    object-fit: unset;
     clip-path: circle(75px at center);
     border-radius: 50%;
+    box-shadow: 0px 0px 50px 0px var(--blue-ll);
     transition: ease all .5s;
 }
 .subtitle {
@@ -108,26 +110,37 @@ body {
     transition: ease all .5s;
 }
 .links {
-    width: 100%;
+    width: 84%;
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
     transition: ease all .5s;
 }
 .link {
-    margin: 3px 5px;
-    padding: 3px 10px;
-    color: var(--blue-dd);
-    border: 1px solid var(--blue-shadow);
-    border-radius: 3px;
-    font-size: 1rem;
-    font-weight: bold;
+    margin: 0 15px;
     transition: ease all .5s;
     align-self: center;
+    text-decoration: none;
+    color: var(--blue-d);
+    align-items: center;
+    display: flex;
+    transition: ease all .5s;
+}
+.link svg {
+    fill: var(--blue-d);
+}
+.link svg:hover {
+    fill: var(--blue-l);
 }
 
 #resume {
-    background-color: var(--yellow-ll);
+    margin-left: auto;
+    margin-right: 2%;
+    color: var(--blue-dd);
+    font-weight: bold;
+}
+#resume:hover {
+    color: var(--blue-l);
 }
 
 .main-body-container {
@@ -144,10 +157,9 @@ body {
     height: 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     position: sticky;
     position: -webkit-sticky;
-    top: 250px;
+    top: 260px;
 }
 .tech {
     margin: 5px;
@@ -200,9 +212,8 @@ body {
         font-size: 3.5rem;
     }
 
-    .link {
-        margin-right: 2%;
-        font-size: 0.7rem;
+    .tech-container {
+        top: 210px;
     }
 }
 
@@ -232,19 +243,17 @@ body {
     }
 
     .links {
-        margin-left: 5%;
-        text-align: center;
+        width: 85%;
     }
-    .link {
-        margin-right: 1%;
-        font-size: 0.7rem;
+    .tech-container {
+        top: 170px;
     }
     .tech {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .avatar-container {
         width: 165px;
         height: 165px;
@@ -296,13 +305,9 @@ body {
     }
 
     .links {
+        width: 100%;
         margin-left: 0px;
         text-align: right;
-    }
-    .link {
-        margin: 3px;
-        padding: 2px 5px;
-        font-size: 0.7rem;
     }
 
     .main-body-container {
