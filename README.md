@@ -1,5 +1,12 @@
-Hi, I am Ilya, Web & iOS Developer!  
-*(this is my portfolio card)*
+Hi, I am Ilya, Web & iOS Developer!
+
+I have up to 20 years of experience with various tools and technologies:
+ - HTML, CSS, **JavaScript**, jQuery
+ - PHP, Python, PostgreSQL
+ - **React.js**, Node.js
+ - C, Objective-C, **Swift**
+ - iOS, XCode, VSCode, Terminal, CLI
+ - npm, **Git**
 
 Please, feel free to browse and check out the projects I've done over the course of my dev journey. Here are a few you might be interested in:
 
