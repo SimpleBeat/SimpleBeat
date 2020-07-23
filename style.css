@@ -10,3 +10,31 @@ body {
     padding: 0;
     display: flex;
 }
+
+.header-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to left, #6E56BC, #42A9A9);
+}
+
+.avatar-container {
+
+}
+.avatar {
+
+}
+.subtitle {
+
+}
+
+.title-container {
+
+}
+.title {
+
+}
+.tech-stack {
+
+}
