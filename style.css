@@ -17,7 +17,6 @@ html {
     padding: 0;
     overflow-x: hidden;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -132,7 +131,6 @@ body {
 .link svg:hover {
     fill: var(--blue-l);
 }
-
 #resume {
     margin-left: auto;
     margin-right: 2%;
@@ -246,14 +244,16 @@ body {
         width: 85%;
     }
     .tech-container {
-        top: 170px;
+        top: 175px;
     }
     .tech {
-        font-size: 0.8rem;
+        padding: 2px 3px;
+        margin: 2px;
+        font-size: 0.6rem;
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 565px) {
     .avatar-container {
         width: 165px;
         height: 165px;
