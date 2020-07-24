@@ -24,6 +24,10 @@ body {
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .avatar-container {
     width: 165px;
@@ -172,12 +176,92 @@ body {
     transition: ease all .5s;
     z-index: 5;
 }
+.tech-m {
+    margin: 5px;
+    padding: 5px 7px;
+    color: var(--blue-ll);
+    border: 0px solid var(--blue-shadow);
+    border-radius: 3px;
+    font-size: 0rem;
+    transition: ease all .5s;
+    z-index: 5;
+}
 .main-body {
     width: 85%;
-    height: 800px;
     background-color: whitesmoke;
     box-shadow: 0px 0px 150px 0px var(--blue-shadow);
     z-index: 10;
+}
+
+.hello {
+    margin: 25px 25px;
+    padding: 0;
+}
+.hello h1 {
+    margin: 0;
+    padding: 0;
+    color: var(--yellow);
+    font-size: 3rem;
+    text-shadow: 1px 0px 2px var(--blue-l);
+}
+.hello p {
+    margin: 10px ;
+    padding: 0;
+    color: var(--blue-dd);
+    font-size: 1.3rem;
+}
+
+.projects {
+    width: 100%;
+    margin-top: 50px;
+}
+.project-container {
+    margin: 0 15px 50px 15px;
+    padding: 15px;
+    box-shadow: 0 0px 70px 2px var(--blue-shadow);
+    border-radius: 5px;
+    transition: ease all .5s;
+}
+.project-container:hover {
+    box-shadow: 0 0px 2px 2px var(--blue-shadow);
+}
+.project-name {
+    font-size: 2rem;
+    color: var(--yellow);
+    text-shadow: 1px 0px 2px var(--blue-l);
+}
+.project-description {
+    font-style: italic;
+    margin: 10px;
+    padding: 0 10px;
+    font-size: 1rem;
+    border-left: 3px solid var(--yellow-l);
+    color: var(--blue-d);
+}
+.project-tech {
+    margin: 5px;
+    padding: 2px;
+}
+.project-images {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-images img {
+    margin: 5px;
+    padding: 2px;
+    border: 5px solid white;
+    align-self: flex-start;
+    border-radius: 5px;
+    width: 300px;
+}
+.project-links {
+    margin: 10px;
+    padding: 0 0px;
+    font-size: 1rem;
+    color: var(--yellow-d);
 }
 
 .footer-container {
@@ -324,7 +408,6 @@ body {
 
     .main-body-container {
         justify-content: center;
-
     }
     .tech-container {
         width: 0%;
@@ -335,10 +418,18 @@ body {
         font-size: 0rem;
         transition: ease all .5s;
     }
+    .tech-m {
+        margin: 5px;
+        padding: 5px 7px;
+        color: var(--blue-ll);
+        border: 1px solid var(--blue-shadow);
+        border-radius: 3px;
+        font-size: 0.8rem;
+        transition: ease all .5s;
+        z-index: 5;
+    }
     .main-body {
         width: 95%;
-        height: 800px;
-        background-color: whitesmoke;
         box-shadow: 0px 0px 3px 0px var(--blue-shadow);
     }
 }
