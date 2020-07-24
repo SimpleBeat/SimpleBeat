@@ -214,8 +214,10 @@ a {
 .projects {
     width: 100%;
     margin-top: 50px;
+    transition: ease all .5s;
 }
 .project-container {
+    max-width: 60%;
     margin: 0 15px 50px 15px;
     padding: 15px;
     box-shadow: 0 0px 70px 2px var(--blue-shadow);
@@ -237,10 +239,12 @@ a {
     font-size: 1rem;
     border-left: 3px solid var(--yellow-l);
     color: var(--blue-d);
+    transition: ease all 1s;
 }
 .project-tech {
-    margin: 5px;
-    padding: 2px;
+    margin-left: 5px;
+    display: none;
+    transition: ease all .5s;
 }
 .project-images {
     margin: 0;
@@ -255,13 +259,18 @@ a {
     border: 5px solid white;
     align-self: flex-start;
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
+    display: none;
+    transition: ease all 1s;
 }
 .project-links {
     margin: 10px;
     padding: 0 0px;
     font-size: 1rem;
-    color: var(--yellow-d);
+    color: var(--yellow-dd);
+}
+.project-links a:hover {
+    color: var(--blue-ll);
 }
 
 .footer-container {
@@ -304,6 +313,10 @@ a {
     .tech-container {
         top: 210px;
     }
+
+    .project-container {
+        max-width: 80%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -341,6 +354,9 @@ a {
         padding: 2px 3px;
         margin: 2px;
         font-size: 0.6rem;
+    }
+    .project-container {
+        max-width: 90%;
     }
 }
 
@@ -418,6 +434,9 @@ a {
         font-size: 0rem;
         transition: ease all .5s;
     }
+    .project-tech {
+        display: inline-flex;
+    }
     .tech-m {
         margin: 5px;
         padding: 5px 7px;
@@ -431,5 +450,11 @@ a {
     .main-body {
         width: 95%;
         box-shadow: 0px 0px 3px 0px var(--blue-shadow);
+    }
+    .project-container {
+        max-width: 100%;
+    }
+    .project-links {
+        font-size: 0.8rem;
     }
 }
