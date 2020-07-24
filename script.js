@@ -8,8 +8,7 @@ function showScreenShot(elementName) {
     const text = document.getElementById(elementName+'Text')
     const img = document.getElementById(elementName+'Image')
     
-    counters[elementName]++
-    
+    counters[elementName]++    
     if (counters[elementName] > 3) { counters[elementName] = 0 }
 
     const count = counters[elementName]
@@ -21,6 +20,5 @@ function showScreenShot(elementName) {
         img.style.display = 'block'
         const imageName = 'img/'+elementName+count+'.png'
         img.src = imageName
-        console.log(img)
     }
 }
