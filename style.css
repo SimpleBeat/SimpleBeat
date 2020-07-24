@@ -253,7 +253,7 @@ body {
     }
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 580px) {
     .avatar-container {
         width: 165px;
         height: 165px;
@@ -309,7 +309,7 @@ body {
         justify-content: space-evenly;
     }
     .link {
-        margin: 0 5px;
+        margin: 0 3px;
     }
     #resume {
         margin-left: 5px;
