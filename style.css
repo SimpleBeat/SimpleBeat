@@ -33,7 +33,7 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 55px;
-    z-index: 10;
+    z-index: 30;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -105,7 +105,7 @@ body {
     justify-content: flex-end;
     flex-wrap: nowrap;
     box-shadow: 0px 2px 5px 0px var(--blue-shadow);
-    z-index: 5;
+    z-index: 25;
     transition: ease all .5s;
 }
 .links {
@@ -147,6 +147,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    z-index: 5;
 }
 .tech-container {
     margin-top: 10px;
@@ -158,6 +159,8 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 260px;
+    justify-content: center;
+    z-index: 5;
 }
 .tech {
     margin: 5px;
@@ -167,12 +170,14 @@ body {
     border-radius: 3px;
     font-size: 1rem;
     transition: ease all .5s;
+    z-index: 5;
 }
 .main-body {
     width: 85%;
     height: 800px;
     background-color: whitesmoke;
     box-shadow: 0px 0px 150px 0px var(--blue-shadow);
+    z-index: 10;
 }
 
 .footer-container {
@@ -182,7 +187,7 @@ body {
     height: 150px;
     align-self: right;
     background: linear-gradient(to left, var(--blue-dd), var(--blue-l));
-    z-index: 10;
+    z-index: 50;
     box-shadow: 0px -3px 4px 0px var(--blue-shadow);
 }
 
