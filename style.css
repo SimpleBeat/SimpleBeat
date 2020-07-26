@@ -156,7 +156,7 @@ a {
     z-index: 5;
 }
 .tech-container {
-    margin-top: 10px;
+    margin-top: 30px;
     float: left;
     width: 15%;
     height: 0;
@@ -165,8 +165,14 @@ a {
     position: sticky;
     position: -webkit-sticky;
     top: 260px;
-    justify-content: center;
+    justify-content: flex-end;
     z-index: 5;
+}
+.experience-item {
+    margin: 5px;
+    color: var(--blue-l);
+    text-align: center;
+    font-size: 1.1rem;
 }
 .tech {
     margin: 5px;
@@ -332,6 +338,10 @@ a {
         top: 210px;
     }
 
+    .experience-item {
+        font-size: 1rem;
+    }
+
     .project-container {
         max-width: 80%;
     }
@@ -369,6 +379,9 @@ a {
     }
     .tech-container {
         top: 175px;
+    }
+    .experience-item {
+        font-size: 0.8rem;
     }
     .tech {
         padding: 2px 3px;
@@ -447,6 +460,9 @@ a {
     }
     .tech-container {
         width: 0%;
+    }
+    .experience-item {
+        font-size: 0rem;
     }
     .tech {
         color: var(--blue-ll);
