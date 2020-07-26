@@ -7,7 +7,6 @@ faceFinderElement.addEventListener('click', function() { showScreenShot('face') 
 const roboFriendsElement = document.getElementById("roboFriends")
 roboFriendsElement.addEventListener('click', function() { showScreenShot('robo') })
 
-
 function showScreenShot(elementName) {
     const text = document.getElementById(elementName+'Text')
     const img = document.getElementById(elementName+'Image')
