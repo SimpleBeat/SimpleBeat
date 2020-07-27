@@ -172,7 +172,10 @@ a {
     margin: 5px;
     color: var(--blue-l);
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+.experience-item b {
+    font-size: 1.2rem;
 }
 .tech {
     margin: 5px;
@@ -383,6 +386,9 @@ a {
     .experience-item {
         font-size: 0.8rem;
     }
+    .experience-item b {
+        font-size: 1rem;
+    }
     .tech {
         padding: 2px 3px;
         margin: 2px;
@@ -489,5 +495,14 @@ a {
     }
     .project-links {
         font-size: 0.8rem;
+    }
+    .experience-item {
+        margin: 5px;
+        color: var(--blue-l);
+        text-align: center;
+        font-size: 0rem;
+    }
+    .experience-item b {
+        font-size: 0rem;
     }
 }
