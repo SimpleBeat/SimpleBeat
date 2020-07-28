@@ -244,6 +244,9 @@ a {
     text-shadow: 1px 0px 2px var(--blue-l);
     cursor: pointer;
 }
+#katulinPortfolio {
+    cursor: default;
+}
 .project-description {
     font-style: italic;
     margin: 10px;
