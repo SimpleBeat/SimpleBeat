@@ -350,7 +350,7 @@ a {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .avatar-container {
         width: 90px;
         height: 90px;
@@ -399,7 +399,7 @@ a {
     }
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 700px) {
     .avatar-container {
         width: 165px;
         height: 165px;
