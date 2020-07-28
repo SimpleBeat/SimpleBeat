@@ -1,11 +1,14 @@
 let counters = {
     'face': 0,
-    'robo': 0
+    'robo': 0,
+    'acie': 0
 }
 const faceFinderElement = document.getElementById("faceFinder")
 faceFinderElement.addEventListener('click', function() { showScreenShot('face') })
 const roboFriendsElement = document.getElementById("roboFriends")
 roboFriendsElement.addEventListener('click', function() { showScreenShot('robo') })
+const acieAnniversaryElement = document.getElementById("acieAnniversary")
+acieAnniversaryElement.addEventListener('click', function() { showScreenShot('acie') })
 
 function showScreenShot(elementName) {
     const text = document.getElementById(elementName+'Text')
