@@ -180,7 +180,7 @@ a {
 }
 .tech {
     margin: 3px;
-    padding: 3px 3px;
+    padding: 2px 2px;
     color: var(--blue-ll);
     border: 1px solid var(--blue-shadow);
     border-radius: 3px;
@@ -308,7 +308,7 @@ a {
     box-shadow: 0px -3px 4px 0px var(--blue-shadow);
 }
 .footer-links {
-    margin: 10px 16%;
+    margin: 10px 15%;
     font-size: 1rem;
     color: var(--yellow-d);
     display: flex;
@@ -492,8 +492,8 @@ a {
         transition: ease all .5s;
     }
     .tech-m {
-        margin: 4px;
-        padding: 3px 5px;
+        margin: 3px;
+        padding: 2px 2px;
         color: var(--blue-ll);
         border: 1px solid var(--blue-shadow);
         border-radius: 3px;

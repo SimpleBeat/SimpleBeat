@@ -1,6 +1,6 @@
 Hi, I am Ilya, Web & iOS Developer!
 
-I have up to 20 years of experience with various tools and technologies:
+I have 20 years of experience with various tools and technologies:
  - HTML, CSS, **JavaScript**, jQuery
  - PHP, Python, PostgreSQL
  - **React.js**, Node.js
@@ -8,10 +8,10 @@ I have up to 20 years of experience with various tools and technologies:
  - iOS, XCode, VSCode, Terminal, CLI
  - npm, **Git**
 
-Please, feel free to browse and check out the projects I've done over the course of my dev journey. Here are a few you might be interested in:
+Please, feel free to browse and check out the projects I've done over the course of my dev journey. Here are a few highlights:
 
- + [SimpleBeat Portfolio website](https://simplebeat.github.io/SimpleBeat/) (HTML, CSS, JavaScript)
- + [Face Finder](https://faces-network.herokuapp.com) webapp (React.js, Node.js, Postgresql)
+ + [Portfolio](https://simplebeat.github.io/SimpleBeat/) website (HTML, CSS, JavaScript)
+ + [Face Finder](https://faces-network.herokuapp.com) webapp (React.js, Node.js, Postgresql, JavaScript)
  + [Stillars Millg Personal Training & Meditation](http://stillars.moscow) website (HTML, CSS, JavaScript, jQuery)
- + [Albatross Theatre website](https://simplebeat.github.io/albatross/) (HTML, CSS, PHP)
- + [American Councils for International Exchange 10th Anniversary](https://simplebeat.github.io/2001-FLEX/) regional website (HTML, CSS)
+ + [Albatross Theatre](https://simplebeat.github.io/albatross/) website (HTML, CSS, PHP, APIs)
+ + [American Councils for International Exchange](https://simplebeat.github.io/2001-FLEX/) regional website (HTML, CSS)
