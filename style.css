@@ -32,7 +32,7 @@ a {
 .avatar-container {
     width: 165px;
     height: 165px;
-    margin: 20px 20px -200px 15px;
+    margin: 20px 20px -200px 1.7%;
     padding: 0;
     position: sticky;
     position: -webkit-sticky;
@@ -157,6 +157,7 @@ a {
 }
 .tech-container {
     margin-top: 30px;
+    margin-left: .1%;
     float: left;
     width: 15%;
     height: 0;
@@ -329,7 +330,7 @@ a {
     .avatar-container {
         width: 120px;
         height: 120px;
-        margin: 20px 20px -200px 10px;
+        margin: 20px 20px -200px 2%;
     }
     .avatar {
         padding: 10px;
@@ -368,7 +369,7 @@ a {
     .avatar-container {
         width: 90px;
         height: 90px;
-        margin: 20px 20px -200px 5px;
+        margin: 20px 20px -200px 2%;
     }
     .avatar {
         padding: 5px;
