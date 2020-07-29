@@ -1,9 +1,15 @@
+// General web-page code
+
+// counters are for keeping track of what content is displayed in project description:
+//   0 - text, 1, 2, 3 - screenshots
 let counters = {
     'face': 0,
     'robo': 0,
     'acie': 0,
     'teatr': 0
 }
+
+// declaring constants to show/hide project description text/screenshots
 const faceFinderElement = document.getElementById("faceFinder")
 faceFinderElement.addEventListener('click', function() { showScreenShot('face') })
 const roboFriendsElement = document.getElementById("roboFriends")
@@ -31,3 +37,6 @@ function showScreenShot(elementName) {
         img.src = imageName
     }
 }
+
+
+// Hello World Script - for 'Guess the Number' game
