@@ -34,14 +34,15 @@
     box-shadow: 0px 0px 200px 0px var(--blue-shadow);
 }
 .hello-world-header {
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-size: 1rem;
     color: var(--blue-d);
     text-align: center;
     transition: ease all .5s;
 }
 .game-buttons {
+
     text-align: center;
     transition: ease all .5s;
 }
@@ -73,6 +74,8 @@
     width: 100%;
     transition: ease all .5s;
     opacity: 0;
+    margin: 0;
+    padding: 0;
 }
 .intro-header {
     font-size: 1.2rem;
@@ -83,7 +86,7 @@
     text-align: center;
     font-size: 0.9rem;
     color: var(--blue-l);
-    margin: 15px 0 0 15px;
+    margin: 5px 0 5px 0;
 }
 .game-text-container {
     width: 100%;
