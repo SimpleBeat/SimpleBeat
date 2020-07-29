@@ -224,13 +224,73 @@
 
             <!-- Hello World - 'Guess the Number' game -->
             <aside class="hello-world-container" id="hello-world-container">
-                <header class="hello-world-header">
-                    <p>When learning new languages I code my own version of 'Hello World', which is actually a mini-game!</p>
+                <header class="hello-world-header" id="game-header">
+                    <p>When learning new languages<br>I code my own version of 'Hello World',<br>which is actually a quick mini-game!</p>
                     <p>Would you like to play it now?</p>
                 </header>
-                <section class="game-buttons">
-                    <button id="yes-button">YES</button>
-                <button id="no-button" onclick="getElementById('hello-world-container').style.display = 'none'">NO</button>
+                <section class="game-buttons" id="yes-no-buttons">
+                    <button id="yes-button" onclick="startGame()">
+                        YES
+                    </button>
+                <button id="no-button" onclick="getElementById('hello-world-container').style.display = 'none'">
+                    NO
+                </button>
+                </section>
+
+                <section class="game-intro" id="game-intro">
+                    <div class="intro">
+                        <p class="intro-header"><b>Guess the Number</b></p>
+                        I picked a random number<br>
+                        between 0 and 99.<br>
+                        You have 6 attempts to guess it!
+                    </div>
+                </section>
+
+                <section class="game-text-container" id="game-text">
+                    <div class="attempt" id="a1">
+                        Enter your first guess
+                    </div>
+                    <div class="attempt" id="a2">
+                        Enter your second guess
+                    </div>
+                    <div class="attempt" id="a3">
+                        Enter your third guess
+                    </div>
+                    <div class="attempt" id="a4">
+                        Enter your fourth guess
+                    </div>
+                    <div class="attempt" id="a5">
+                        Enter your fifth guess
+                    </div>
+                    <div class="attempt" id="a6">
+                        Enter your last guess
+                    </div>
+                </section>
+
+                <section class="display-container" id="display-container">
+                    <span class="digits" id="d1">
+                        0
+                    </span>
+                    <span class="digits" id="d2">
+                        0
+                    </span>
+                </section>
+
+                <section class="numpad-container" id="numpad-container">
+                    <div class="numpad">
+                        <button onclick="buttonPressed('1')">1</button>
+                        <button onclick="buttonPressed('2')">2</button>
+                        <button onclick="buttonPressed('3')">3</button>
+                        <button onclick="buttonPressed('4')">4</button>
+                        <button onclick="buttonPressed('5')">5</button>
+                        <button onclick="buttonPressed('6')">6</button>
+                        <button onclick="buttonPressed('7')">7</button>
+                        <button onclick="buttonPressed('8')">8</button>
+                        <button onclick="buttonPressed('9')">9</button>
+                        <button onclick="eraseNumber()" id="X">✘</button>
+                        <button onclick="buttonPressed('0')">0</button>
+                        <button onclick="submitNumber()" id="E">✔︎</button>
+                    </div>
                 </section>
             </aside>
 

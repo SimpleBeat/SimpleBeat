@@ -140,7 +140,7 @@ a {
 }
 #resume {
     margin-left: auto;
-    margin-right: 5%;
+    margin-right: 11%;
     color: var(--blue-dd);
     font-weight: bold;
 }
@@ -208,6 +208,7 @@ a {
 }
 
 .hello {
+    width: 65%;
     margin: 25px 25px;
     padding: 0;
 }
@@ -245,12 +246,12 @@ a {
     max-width: 60%;
     margin: 0 15px 50px 15px;
     padding: 15px;
-    box-shadow: 0 0px 70px 2px var(--blue-shadow);
+    box-shadow: 0 0px 2px 2px var(--blue-shadow);
     border-radius: 5px;
     transition: ease all .5s;
 }
 .project-container:hover {
-    box-shadow: 0 0px 2px 2px var(--blue-shadow);
+    box-shadow: 0 0px 50px 2px var(--blue-shadow);
 }
 .project-name {
     font-size: 2rem;
@@ -365,15 +366,15 @@ a {
     .hello {
         margin: 25px 25px;
         padding: 0;
-        width: 85%;
+        width: 58%;
     }
 
     .project-container {
-        max-width: 90%;
+        max-width: 55%;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
     .avatar-container {
         width: 90px;
         height: 90px;
@@ -413,6 +414,14 @@ a {
         padding: 2px 3px;
         margin: 2px;
         font-size: 0.6rem;
+    }
+    .project-container {
+        max-width: 90%;
+    }
+    .hello {
+        margin: 25px 25px;
+        padding: 0;
+        width: 90%;
     }
 }
 

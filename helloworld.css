@@ -15,32 +15,35 @@
 }
 
 .hello-world-container {
+    display: flex;
     flex-direction: column;
-    padding: 10px 10px;
-    margin: 252px 30px 35px -400px;
+    margin: 40px 30px 35px -330px;
     min-width: 300px;
     max-width: 300px;
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 500px;
+    max-height: 500px;
     position: sticky;
     position: -webkit-sticky;
-    top: 75px;
+    top: 65px;
     background-color: whitesmoke;
-    box-shadow: 0px 0px 200px 0px var(--blue-shadow);
     border-radius: 4px;
-    align-self: stretch;
+    box-shadow: 0 0px 2px 1px var(--blue-shadow);
     transition: ease all .5s;
 }
 .hello-world-container:hover {
-    box-shadow: 0 0px 2px 1px var(--blue-shadow);
+    box-shadow: 0px 0px 200px 0px var(--blue-shadow);
 }
 .hello-world-header {
+    margin-top: 25px;
+    margin-bottom: 15px;
     font-size: 1rem;
     color: var(--blue-d);
     text-align: center;
+    transition: ease all .5s;
 }
 .game-buttons {
     text-align: center;
+    transition: ease all .5s;
 }
 .game-buttons button {
     border: 0px solid var(--blue-d);
@@ -55,19 +58,100 @@
     box-shadow: 0px 0px 10px 0px var(--blue-shadow);
     transition: ease all .5s;
 }
+.game-buttons button:hover {
+    box-shadow: 0px 0px 2px 0px var(--blue-l);
+    background-color: var(--yellow-ll);
+}
 #yes-button {
     font-weight: bold;
 }
-#yes-button:hover {
-    box-shadow: 0px 0px 2px 0px var(--blue-l);
-    background-color: var(--yellow-ll);
-}
-#no-button:hover {
-    box-shadow: 0px 0px 2px 0px var(--blue-l);
-    background-color: var(--yellow-ll);
+.game-buttons button:active {
+    background-color: var(--yellow-dd);
 }
 
-@media screen and (max-width: 1200px) {
+.game-intro {
+    width: 100%;
+    transition: ease all .5s;
+    opacity: 0;
+}
+.intro-header {
+    font-size: 1.2rem;
+    color: var(--blue-d);
+    margin: 25px 0 5px 0;
+}
+.intro {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--blue-l);
+    margin: 15px 0 0 15px;
+}
+.game-text-container {
+    width: 100%;
+    transition: ease all .5s;
+    opacity: 0;
+    font-size: 0.9rem;
+    color: var(--blue);
+    text-align: center;
+    margin: 15px 10px 5px 10px;
+}
+.display-container {
+    text-align: center;
+    color: var(--yellow-d);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0px 5px 0 5px;
+    transition: ease all .5s;
+    opacity: 0;
+}
+.attempt {
+    opacity: 0;
+    margin-bottom: 2px;
+    transition: ease all .5s;
+}
+.digits {
+    padding: 10px;
+    text-shadow: 1px 0 1px var(--blue);
+    transition: ease all .5s;
+}
+.numpad-container {
+    margin-top: 10px;
+    width: 100%;
+    transition: ease all .5s;
+    opacity: 0;
+}
+.numpad {
+    text-align: center;
+}
+.numpad button {
+    width: 88px;
+    height: 44px;
+    margin: 2px;
+    border: 0px solid var(--blue-d);
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: var(--blue-d);
+    font-size: 1rem;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 0px var(--blue-shadow);
+    transition: ease all .5s;
+}
+.numpad button:hover {
+    box-shadow: 0px 0px 2px 0px var(--blue-l);
+    background-color: var(--yellow-ll);
+}
+.numpad button:active {
+    background-color: var(--yellow-dd);
+}
+#X {
+    color: var(--yellow);
+    text-shadow: 0px 0px 1px black;
+}
+#E {
+    color: var(--yellow);
+    text-shadow: 0px 0px 1px black;
+}
+
+@media screen and (max-width: 1020px) {
     .hello-world-container {
         display: none;
     }
