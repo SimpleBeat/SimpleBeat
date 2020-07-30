@@ -1,6 +1,6 @@
 Hi, I am Ilya, Web & iOS Developer!
 
-I have 20 years of experience with various tools and technologies:
+I have 15 years of experience with various tools and technologies:
  - HTML, CSS, **JavaScript**, jQuery
  - PHP, Python, PostgreSQL
  - **React.js**, Node.js
