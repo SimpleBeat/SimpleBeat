@@ -258,6 +258,17 @@ a {
     color: var(--yellow);
     text-shadow: 1px 0px 2px var(--blue-l);
     cursor: pointer;
+    margin-bottom: 0px;
+}
+.project-name p {
+    font-size: 0.8rem;
+    color: var(--yellow-dd);
+    text-shadow: none;
+    transition: ease all .5s;
+    margin-top: 0px;
+}
+.project-name p:hover {
+    color: var(--blue-ll);
 }
 #katulinPortfolio {
     cursor: default;
